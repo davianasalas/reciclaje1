@@ -1,0 +1,391 @@
+html
+{
+    height: 100%;
+}
+body
+{
+    min-height: 100%;
+}
+.header
+{
+    grid-area: header;
+    
+}
+
+.nav-bar
+{
+    grid-area:nav-bar;
+    background-color: cornsilk;
+}
+.sidebar
+{   grid-area:sidebar;
+    background-color:cornsilk;
+}
+.main
+{
+    grid-area:main;
+    background-color: cornsilk;
+    background-color: #f5f5f5;
+
+    
+}
+.footer
+{   
+    grid-area: footer;
+    background-color: cornsilk;
+}
+
+/* INICIO REGISTER*/
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(27, 27, 27, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: rgb(200, 189, 189);
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(56, 90, 194);
+    cursor: pointer;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  /* FIN REGISTER*/
+
+#mainregister
+  { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+  }
+
+  /* INICIO ESTILO DE NOSOTROS MISION Y VISION*/
+
+.bodymision
+{
+  background-image: url('/static/img/imagenvision.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 5%; 
+ }
+
+.bodyvision
+{
+  background-image: url('/static/img/imagenvision.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 5%; 
+}
+.bodyregistrarse
+{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/static/img/imagenr.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 5%; 
+
+  }
+
+  .bodylogin
+  {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/static/img/imagenr.jpg');
+     background-repeat: no-repeat;
+    margin-top: 5%;
+     }
+
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: white;
+      padding: 2.5em;
+      border-radius: 25px;
+      transition: .4s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.4) 1px 2px 2px; }
+    
+    
+    .form:hover {
+      transform: translateX(-0.5em) translateY(-0.5em);
+      border: 1px solid #171717;
+      box-shadow: 10px 10px 0px #666666;
+    }
+    
+    .heading {
+      color: black;
+      padding-bottom: 2em;
+      text-align: center;
+      font-weight: bold;
+    }
+    
+    .input {
+      border-radius: 5px;
+      border: 1px solid whitesmoke;
+      background-color: whitesmoke;
+      outline: none;
+      padding: 0.7em;
+      transition: .4s ease-in-out;
+    }
+    
+    .input:hover {
+      box-shadow: 6px 6px 0px #969696,
+                 -3px -3px 10px #ffffff;
+    }
+    
+    .input:focus {
+      background: #ffffff;
+      box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    }
+    
+    .form .btn {
+      margin-top: 2em;
+      align-self: center;
+      padding: 0.7em;
+      padding-left: 1em;
+      padding-right: 1em;
+      border-radius: 10px;
+      border: none;
+      color: black;
+      transition: .4s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+    }
+    
+    .form .btn:hover {
+      box-shadow: 6px 6px 0px #969696,
+                 -3px -3px 10px #ffffff;
+      transform: translateX(-0.5em) translateY(-0.5em);
+    }
+    
+    .form .btn:active {
+      transition: .2s;
+      transform: translateX(0em) translateY(0em);
+      box-shadow: none;
+    }
+  
+
+/* Estilos para el contenedor del artículo */
+.mainnosotros {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  
+}
+
+/* Estilos para el párrafo del artículo */
+.mainnosotros p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el título del artículo */
+.mainnosotros h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para enlaces */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el título de la página */
+.title {
+  text-align: center;
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+/* Estilos para los encabezados */
+h2 {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+/* Estilos para los márgenes */
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+/* Estilos para los párrafos */
+p {
+  line-height: 1.6;
+}
+
+
+/*FINAL ESTILO NOSOTROS MISON Y VISION*/
+
+
+
+
+
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template:
+      "header"  80px
+      "nav-bar"  50px
+      "main"    auto
+      "sidebar" 50px
+      "footer"  50px;
+  }
+@media (min-width: 600px) and (max-width: 899px) 
+  {
+    .grid-container{
+        display: grid;
+        gap: 10px;
+        grid-template:
+          "header header" 80px
+          "nav-bar nav-bar"  50px
+         "sidebar main " auto
+          "footer footer"  50px / 200px auto;
+      }      
+  }
+  @media (min-width: 900px) 
+  {
+    .grid-container{
+        display: grid;
+        gap: 10px;
+        grid-template:
+          "header header header" 80px
+          "nav-bar main sidebar"  auto
+          "footer footer footer"  100px / 200px    auto   200px;
+      }      
+  }
