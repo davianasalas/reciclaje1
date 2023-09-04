@@ -203,6 +203,7 @@ body
   background-image: url('/static/img/imagenr.jpg');
   background-position: center;
   background-repeat: no-repeat;
+  background-size: a;
   margin-top: 5%; 
 
   }
@@ -216,6 +217,39 @@ body
      background-repeat: no-repeat;
     margin-top: 5%;
      }
+
+     .bodypublicaciones
+     {
+      background-image: url('/static/img/ujuu.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed ;
+     
+
+
+    
+     
+      }
+      .card-group {
+        display: flex;
+      }
+      
+      .card {
+        /* Puedes agregar margen o espacio entre las tarjetas si lo deseas */
+        margin-right: 50px; /* Margen derecho entre las tarjetas (ajusta según tus preferencias) */
+        padding: 5px;
+      }
+      Ambos enfoques funcionarán para mostrar las tarjetas una al lado de la otra. Elige el que mejor se adapte a tus necesidades y preferencias de diseño.
+      
+      
+      
+      
+      
+      
+      
+      
+
+
 
 
     .form {
